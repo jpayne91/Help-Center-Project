@@ -66,11 +66,11 @@ public class database {
            this.rowrs.next();
            
 //RS and stmt for the employee table.           
-//            this.empstmt = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
-//            this.emprs= empstmt.executeQuery             
-//         ("SELECT * FROM APP.EMPLOYEE");  
-//           this.emprs.beforeFirst();
-//           this.emprs.next();
+            this.empstmt = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
+            this.emprs= empstmt.executeQuery             
+         ("SELECT * FROM APP.EMPLOYEE");  
+           this.emprs.beforeFirst();
+           this.emprs.next();
  
            
            
