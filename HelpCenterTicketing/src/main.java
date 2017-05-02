@@ -48,24 +48,39 @@ viewTicket viewticket = new viewTicket();
         buttonViewTicket = new javax.swing.JToggleButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(51, 51, 51));
 
-        buttonPhoneCall.setText("Phone Call");
+        buttonPhoneCall.setBackground(new java.awt.Color(51, 204, 0));
+        buttonPhoneCall.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        buttonPhoneCall.setText("New Ticket");
+        buttonPhoneCall.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        buttonPhoneCall.setBorderPainted(false);
         buttonPhoneCall.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttonPhoneCallActionPerformed(evt);
             }
         });
 
-        buttonInfo.setText("Employees");
+        buttonInfo.setBackground(new java.awt.Color(255, 255, 51));
+        buttonInfo.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        buttonInfo.setText("New User");
+        buttonInfo.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        buttonInfo.setBorderPainted(false);
         buttonInfo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttonInfoActionPerformed(evt);
             }
         });
 
-        mainLogo.setText("Helpdesk");
+        mainLogo.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
+        mainLogo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        mainLogo.setText("Help Desk Center");
 
+        buttonViewTicket.setBackground(new java.awt.Color(0, 153, 255));
+        buttonViewTicket.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         buttonViewTicket.setText("View Ticket");
+        buttonViewTicket.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        buttonViewTicket.setBorderPainted(false);
         buttonViewTicket.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttonViewTicketActionPerformed(evt);
@@ -77,33 +92,28 @@ viewTicket viewticket = new viewTicket();
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(170, 170, 170)
-                        .addComponent(mainLogo))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(151, 151, 151)
-                        .addComponent(buttonViewTicket)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(62, 62, 62)
-                .addComponent(buttonPhoneCall)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 95, Short.MAX_VALUE)
-                .addComponent(buttonInfo)
-                .addGap(77, 77, 77))
+                    .addComponent(buttonViewTicket, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(buttonInfo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(buttonPhoneCall, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(131, Short.MAX_VALUE)
+                .addComponent(mainLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(123, 123, 123))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(mainLogo)
-                .addGap(56, 56, 56)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(buttonPhoneCall)
-                    .addComponent(buttonInfo))
-                .addGap(44, 44, 44)
-                .addComponent(buttonViewTicket)
-                .addContainerGap(129, Short.MAX_VALUE))
+                .addComponent(mainLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(buttonPhoneCall, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(buttonInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 54, Short.MAX_VALUE)
+                .addComponent(buttonViewTicket, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(6, 6, 6))
         );
 
         pack();

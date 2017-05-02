@@ -35,9 +35,6 @@ class d2 {
          } 
    }
    
-    /**
-     *hi there
-     */
     public void insert(){try {
          rs = stmt.executeQuery("SELECT * FROM APP.TICKET");
            total();    
