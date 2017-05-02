@@ -244,8 +244,9 @@ public class database {
                 String phone = rs.getString("PHONE");
                 String status = rs.getString("STATUS");
                 String prob = rs.getString("PROBLEM");
+                String space = "  ";
 
-                p = p + (id_col + " " + first_name + " " + phone + " " + status + " " + prob + "\n");
+                p = p + (id_col + "  " + first_name + "   " + phone + "   " + status + "   " + prob + "\n");
 
             }
         } catch (Exception e) {
